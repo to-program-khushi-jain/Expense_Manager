@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/bgh">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+           <com.github.mikephil.charting.charts.PieChart
+               android:id="@+id/pieChart"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/addIncome"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="191dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="#313435"
+        android:backgroundTint="#9C27B0"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Add Income"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/addExpense"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="194dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="#313435"
+        android:backgroundTint="#9C27B0"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Add Expense"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
+
+
